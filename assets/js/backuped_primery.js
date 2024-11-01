@@ -1,0 +1,1 @@
+function get_backup_from_app_information(){	jQuery.ajax({        url: ajaxurl,        data: {            action: "backup_data"        },        success:function(data) {        	if(data == 10){        		jQuery('#show_link_backup').removeClass('hide');        	}else{        		jQuery('#show_error_backup').removeClass('hide');        	}        }    }); }
